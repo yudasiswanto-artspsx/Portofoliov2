@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *)); // Custom variant for dark mode
+
+html {
+  --line-color: #e5e7eb; /* Tail wind's gray-200 */
+}
+
+html.dark {
+  --line-color: #374151; /* Tail wind's gray-700 */
+}
+
+.borderBlack {
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Equivalent to border-black/10 */
+}
